@@ -27,15 +27,18 @@ header {
 }
 
 .header-left>ul {
-    max-width: 100%;
     align-items: center;
     display: flex;
     gap: 30px;
+    background-color: red;
 }
 
 .header-left>ul>li {
     font-size: 16px;
+    position: relative;
     letter-spacing: 0.5px;
+    padding-bottom: 2px;
+    background-color: yellow;
 }
 
 
@@ -88,8 +91,24 @@ header {
 }
 
 .header-left>ul>li:hover .list1 {
-    opacity: 1;
+    opacity: 0;
 }
+
+.border {
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    top: 100%;
+    transition: 1s;
+    left: -65px;
+}
+
+.header-left>ul>li:hover .border {
+    left: 0px;
+    width: 200%;
+}
+
 
 .list-mid {
     display: flex;
@@ -130,7 +149,7 @@ header {
 }
 
 .header-left>ul>li:hover .list2 {
-    opacity: 1;
+    opacity: 0;
 }
 
 .list3 {
@@ -146,7 +165,7 @@ header {
 }
 
 .header-left>ul>li:hover .list3 {
-    opacity: 1;
+    opacity: 0;
 }
 
 .list4 {
@@ -162,7 +181,7 @@ header {
 }
 
 .header-left>ul>li:hover .list4 {
-    opacity: 1;
+    opacity: 0;
 }
 
 .list5 {
@@ -178,7 +197,7 @@ header {
 }
 
 .header-right>span:hover .list5 {
-    opacity: 1;
+    opacity: 0;
 }
 
 
